@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop by Category</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="top-head">
+        <h1><strong>TAKHT E LIBAAS</strong></h1>
+       <img src="">
+    </section>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+
+    <!-- Shop by Category Section -->
+    <div class="shop-container">
+        <h1>SHOP BY CATEGORY</h1>
+
+        <!-- Hijab Category -->
+        <h2>Hijab</h2>
+        <div class="categories">
+            <button class="category-btn" data-category="silk">Silk</button>
+            <button class="category-btn" data-category="organza">Organza</button>
+            <button class="category-btn" data-category="crinkle">Crinkle</button>
+            <button class="category-btn" data-category="lawn">Lawn</button>
+        </div>
+        <div class="products" id="hijab-products">
+            <!-- Products for Hijab will be displayed here -->
+        </div>
+
+        <!-- Accessories Category -->
+        <h2>Accessories</h2>
+        <div class="categories">
+            <button class="category-btn" data-category="scrunchies">Scrunchies</button>
+            <button class="category-btn" data-category="magnet-pins">Magnet Pins</button>
+        </div>
+        <div class="products" id="accessories-products">
+            <!-- Products for Accessories will be displayed here -->
+        </div>
+    </div>
+
+     <!-- Product container where products will be displayed -->
+     <div id="product-container"></div>
+
+    <footer>
+        <p>&copy; 2024 Takht e Libaas. All rights reserved.</p>
+        </footer>
+
+    <script src="script.js"></script>
+    <script src="product.js"></script>
+</body>
+</html>
+
+
+

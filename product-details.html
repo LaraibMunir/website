@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="cart.html">Cart</a></li>
+        </ul>
+    </nav>
+
+    <!-- Product Details Section -->
+    <div id="product-image-container"></div>
+
+    <div class="product-details-container">
+        <img src="${product.image}" alt="${product.name}" style="width:200px;height:200px;" />
+        <h1 id="product-name">Product Name</h1>
+        <p id="product-price">Product Price</p>
+        <p id="product-description">Product Description</p>
+
+        <!-- Quantity Selection -->
+        <div class="quantity-selection">
+            <label for="quantity">Quantity: </label>
+            <input type="number" id="quantity" value="1" min="1">
+        </div>
+
+        <!-- Add to Cart Button -->
+        <button id="add-to-cart-btn">Add to Cart</button>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="product.js"></script>
+    <script src="product-details.js"></script>
+</body>
+</html>
+
+
